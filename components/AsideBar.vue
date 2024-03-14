@@ -6,15 +6,16 @@
       </div>
       <h2 class="title">全粘工程师</h2>
     </div>
-
-    <nav></nav>
   </aside>
 </template>
 <style lang="scss" scoped>
 .aside-bar {
   background-color: var(--main-grey);
   overflow-y: scroll;
+  position: sticky;
+  top: 0;
   width: 28rem;
+  min-width: 28rem;
   height: 100vh;
   padding: 2rem 0;
 
