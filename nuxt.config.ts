@@ -11,7 +11,10 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: "github-light"
-    }
+    },
   },
-  css: ['~/assets/css/variables.css', '~/assets/css/reset.scss']
+  css: ['~/assets/css/variables.css', '~/assets/css/reset.scss'],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
 })
