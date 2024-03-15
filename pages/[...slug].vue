@@ -3,6 +3,7 @@ const stringToArray = (string) => {
   return string.split(',');
 }
 
+
 </script>
 <template>
   <main class="content-display">

@@ -12,6 +12,7 @@ body {
   font-family: NotoSerifSimplifiedChinese;
   line-height: 1.8;
   letter-spacing: 0.18rem;
+  color: var(--main-black);
 }
 
 ul {
@@ -20,9 +21,24 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-grey5);
+  color: var(--main-black);
 }
 
 p {
   margin: 1rem 0;
+}
+
+h2.page-title {
+  font-size: 2.5rem;
+  position: relative;
+  margin-left: 3rem;
+  font-weight: normal;
+  color: var(--main-red);
+  &::before {
+    content: "#";
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

@@ -8,6 +8,7 @@
       <div class="content">
         <NuxtPage />
       </div>
+      <AsideTagBar />
     </div>
   </div>
 </template>
@@ -17,6 +18,7 @@
 
   .content {
     padding: 2rem;
+    flex: 1;
   }
 }
 

@@ -22,7 +22,7 @@ const navData = [
       <div class="who-am-i">
         <h1 class="mememe">luffy</h1>
       </div>
-      <h2 class="title">全粘工程师</h2>
+      <h2 class="title">Front-End Developer</h2>
       <p class="where-i-base">
         <img class="location-svg" src="@/assets/icons/location.svg" alt="">
         香港
@@ -62,6 +62,7 @@ const navData = [
           display: block;
           display: flex;
           align-items: center;
+          padding: 0.5rem 0;
 
           img {
             width: 2rem;
@@ -98,6 +99,7 @@ const navData = [
     .title {
       margin: 1.2rem 0 0.8rem;
       font-weight: normal;
+      text-align: center;
     }
 
     .where-i-base {
