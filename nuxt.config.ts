@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxt/content', '@nuxtjs/google-fonts', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
+  modules: ['@nuxt/content', '@nuxtjs/google-fonts', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', '@morev/vue-transitions/nuxt'],
   build: {
     transpile: ['pinia-plugin-persistedstate'],
   },
@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     highlight: {
       theme: "github-light"
     },
+    markdown: {
+      anchorLinks: false
+    }
   },
   css: ['~/assets/css/variables.css', '~/assets/css/reset.scss'],
   app: {

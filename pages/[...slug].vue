@@ -23,6 +23,10 @@ const stringToArray = (string) => {
   font-size: 1.4rem;
   padding: 4rem 2rem 6rem;
 
+  @media screen and (max-width: 640px) {
+    padding: 2rem 0rem;
+  }
+
   .article-tag-wrapper {
     margin: 2rem 0;
 
@@ -44,6 +48,7 @@ const stringToArray = (string) => {
     border-left: 1rem solid #ccc;
     margin: 2rem 0px 3rem;
     padding: 2rem 1rem;
+    width: 100%;
     quotes: "\201C" "\201D" "\2018" "\2019";
   }
 
@@ -74,6 +79,17 @@ const stringToArray = (string) => {
     padding: 2rem;
     border: 1px solid var(--main-grey2);
     border-radius: .3rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+
+    code {
+      white-space: inherit;
+
+      span {
+        white-space: inherit;
+      }
+    }
   }
 }
 </style>

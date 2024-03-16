@@ -38,6 +38,7 @@ onMounted(() => {
 </script>
 <template>
   <div class="search-result">
+
     <ul>
       <li v-for="result in res" :key="result._path">
         <h3 class="result-time">

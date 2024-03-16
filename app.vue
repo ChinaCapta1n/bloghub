@@ -15,10 +15,12 @@
 <style lang="scss">
 .page-wrapper {
   display: flex;
+  width: 100%;
 
   .content {
     padding: 2rem;
     flex: 1;
+    width: 100%;
   }
 }
 
@@ -31,5 +33,13 @@
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+}
+
+@media screen and (max-width: 960px) {
+  .page-wrapper {
+    flex-direction: column;
+
+
+  }
 }
 </style>

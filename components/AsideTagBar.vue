@@ -40,6 +40,7 @@ const categoryData = [
       cursor: pointer;
       text-decoration: underline;
       position: relative;
+      font-size: 1.4rem;
 
       &::before {
         content: "";
@@ -53,6 +54,19 @@ const categoryData = [
         background-color: var(--main-grey5);
       }
     }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .tag-bar {
+    width: 25rem;
+    min-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tag-bar {
+    display: none;
   }
 }
 </style>
