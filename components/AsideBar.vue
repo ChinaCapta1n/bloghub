@@ -249,7 +249,17 @@ onUnmounted(() => {
         border-radius: 0.6rem;
 
         .dropdown {
-          padding: 1rem;
+
+          a {
+            font-size: 1.4rem;
+            display: block;
+            border-radius: 0.6rem;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+              background-color: var(--main-grey6);
+            }
+          }
         }
       }
     }
