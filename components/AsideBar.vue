@@ -1,6 +1,7 @@
 <script setup>
 import run from '@/assets/icons/run.svg';
 import bitcoin from '@/assets/icons/bitcoin.svg';
+import justwatch from '@/assets/icons/justwatch.svg';
 
 const navData = [
   {
@@ -12,6 +13,11 @@ const navData = [
     path: '/about',
     txt: '关于',
     icon: bitcoin
+  },
+  {
+    path: '/todos',
+    txt: '代办事项',
+    icon: justwatch
   }
 ]
 

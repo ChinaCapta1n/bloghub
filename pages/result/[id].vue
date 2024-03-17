@@ -70,6 +70,7 @@ onMounted(() => {
     li {
       border-bottom: 1px solid var(--main-grey6);
       padding-bottom: 1rem;
+      margin-bottom: 2rem;
 
       .result-time {
         font-size: 2.15rem;
