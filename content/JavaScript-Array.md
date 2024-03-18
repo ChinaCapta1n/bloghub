@@ -113,6 +113,120 @@ arr.join(","); // 对数据进行拼接，返回一个字符串
 arr.concat(arr2); // 返回新数组，不会改变原数组
 ```
 
+## for of
+
+数组和类数组都可遍历
+
+```js
+const elements = document.querySelectorAll(".item");
+
+for (const item of elements) {
+    console.log(item);
+}
+```
+
+## isArray
+
+判断是否是数组
+
+```js
+const elements = document.querySelectorAll(".item");
+
+isArry(elements); // false
+```
+
+## Array.from
+
+将一个类数组转换为数组，返回一个真数组，不会改变原数组
+
+```js
+const elements = document.querySelectorAll(".item");
+
+Array.from(elements);
+```
+
+## forEach
+
+数组遍历
+
+```js
+arr.forEach(((item, index, arr)) => {
+    console.log(item, index, arr);
+});
+```
+
+## map
+
+数组映射，不会改动原数组，返回新数组
+
+```js
+const newArr = arr.map((item, index, arr) => {
+    return item * 2;
+});
+```
+
+## filter
+
+数组筛选，仅保留满足条件
+
+```js
+const newArr = arr.filter((item, index, arr) => {
+    return item > 2;
+});
+```
+
+## reduce
+
+数组聚合，对数组每一项按照函数的返回聚合
+
+```js
+const sum = arr.reduce((a, b) => {
+    return a + b;
+}, 0);
+```
+
+## some
+
+判断数组中是否有至少一个通过条件的项目
+
+```js
+arr.some((item) => {
+    return item > 60;
+});
+```
+
+## every
+
+判断数组中每一项都满足条件
+
+```js
+arr.every((item) => {
+    return item > 60;
+});
+```
+
+## find
+
+把找到满足条件的第一项返回
+
+```js
+const result = arr.find((item) => {
+    return item > 60;
+});
+```
+
+## includes
+
+判断数组中是否存在某个 item，返回 boolean
+
+```js
+const res = arr1.includes(10);
+```
+
+<br />
+<br />
+<br />
+<br />
 **note\***
 
 对象可以通过数字形式的字符串获取到 value，例如 obj\[\'0'\]\.age，而数组获取方法是 arr\[0]，看似是数字，实际也是数字形式的字符串，数字会被自动转换为字符串。因为不是合法的标识符，所以不能以 arr.0 的形式访问。
